@@ -3,7 +3,7 @@ Workspace para la simulación del edificio de la División de Estudios de Posgra
 
 
 
-###Para ejecutar el plano sin obtaculos 
+### Para ejecutar el plano sin obtaculos 
 cd ~/catkin_ws
 source ./devel/setup.bash
 export TURTLEBOT3_MODEL=burger
