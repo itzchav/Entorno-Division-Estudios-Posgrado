@@ -1,0 +1,8 @@
+prefix=/home/karla/catkin_ws/devel
+
+Name: plano_escritorios
+Description: Description of plano_escritorios
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/karla/catkin_ws/devel
+
+Name: Plano_obstaculos
+Description: Description of Plano_obstaculos
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

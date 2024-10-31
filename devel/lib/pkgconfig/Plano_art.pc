@@ -1,0 +1,8 @@
+prefix=/home/karla/catkin_ws/devel
+
+Name: Plano_art
+Description: Description of Plano_art
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
