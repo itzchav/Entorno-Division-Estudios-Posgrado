@@ -1,0 +1,40 @@
+<launch>
+  <arg name="model" default="burger"/>
+  <arg name="x_pos" default="0"/>
+  <arg name="y_pos" default="0"/>
+  <arg name="z_pos" default="0.15"/>
+  <arg name="roll" default="0"/>
+  <arg name="pitch" default="0"/>
+  <arg name="yaw" default="1.6"/>
+  <!-- Plano 1.6-->
+   <arg name="x2" default="8.927857"/>
+  <arg name="y2" default="32.771286"/>
+  <arg name="z2" default="0"/>
+  
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+     <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/empty.world"/>
+     <arg name="gui" value="true"/>
+    <arg name="paused" value="false"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+ </include> 
+  <node
+    name="tf_footprint_base"
+    pkg="tf"
+    type="static_transform_publisher"
+    args="0 0 0 0 0 0 base_link base_footprint 40" />
+  <node
+    name="spawn_model"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find Plano_completo)/urdf/Plano_completo.urdf -urdf -model Plano_completo -x $(arg x2) -y $(arg y2) -z $(arg z2)"
+    output="screen" />
+  <node
+    name="fake_joint_calibration"
+    pkg="rostopic"
+    type="rostopic"
+    args="pub /calibrated std_msgs/Bool true" />
+    <param name="robot_description" command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model turtlebot3 -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw) -param robot_description" />
+</launch>
