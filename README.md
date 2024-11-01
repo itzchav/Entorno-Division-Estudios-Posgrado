@@ -20,39 +20,35 @@ Workspace para la simulación del edificio de la División de Estudios de Posgra
 
 
 ### Para ejecutar el plano con obtaculos 
+```shell
 cd ~/catkin_ws
-
 source ./devel/setup.bash
-
 export TURTLEBOT3_MODEL=burger
-
 roslaunch turtlebot3_gazebo plano_completo_obstaculos.launch 
+```
 
 ### Para ejecutar el plano sin obtaculos y visualizar en RVIZ
+
+```shell
 cd ~/catkin_ws
-
 source ./devel/setup.bash
-
 export TURTLEBOT3_MODEL=burger
-
 roslaunch turtlebot3_gazebo plano_completo_rviz.launch 
-
+```
 ### Para ejecutar el plano sin obtaculos con gmapping
+
+```shell
 cd ~/catkin_ws
-
 source ./devel/setup.bash
-
 export TURTLEBOT3_MODEL=burger
-
 roslaunch turtlebot3_gazebo plano_completo_gmapping_noetic.launch 
-
-
+```
 
 ### Para ejecutar el plano con obtaculos con gmapping
+
+```shell
 cd ~/catkin_ws
-
 source ./devel/setup.bash
-
 export TURTLEBOT3_MODEL=burger
-
 roslaunch turtlebot3_gazebo plano_completo_obstaculos_noetic.launch 
+```
