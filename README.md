@@ -1,7 +1,9 @@
 # Entorno-Division-Estudios-Posgrado
 Workspace para la simulación del edificio de la División de Estudios de Posgrado.
 
-
+<p align="center">
+    <img width=40% src="https://github.com/itzchav/Navegacion-con-Aprendizaje-por-Refuerzo/blob/main/turtle_rviz.png">
+</p>
 
 ### Para ejecutar el plano sin obtaculos 
 
