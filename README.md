@@ -2,7 +2,7 @@
 Workspace para la simulación del edificio de la División de Estudios de Posgrado.
 
 <p align="center">
-    <img width=40% src="https://github.com/itzchav/Entorno-Division-Estudios-Posgrado/blob/main/plano.png">
+    <img width=50% src="https://github.com/itzchav/Entorno-Division-Estudios-Posgrado/blob/main/plano.png">
 </p>
 
 ### Para ejecutar el plano sin obtaculos 
