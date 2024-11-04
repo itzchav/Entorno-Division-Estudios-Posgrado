@@ -59,3 +59,10 @@ source ./devel/setup.bash
 export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo plano_completo_obstaculos_noetic.launch 
 ```
+
+
+Las coordenadas de inicio de cada pruebas son los siguientes 
+|       | Prueba 1 | Prueba 2 | Prueba 3 |
+|-------|----------|----------|----------|
+| x     |    valor |    valor |    valor |
+| y     |    valor |    valor |    valor |
