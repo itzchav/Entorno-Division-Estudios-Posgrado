@@ -62,7 +62,7 @@ roslaunch turtlebot3_gazebo plano_completo_obstaculos_noetic.launch
 
 
 Las coordenadas de inicio de cada pruebas son los siguientes 
-|       | Prueba 1 | Prueba 2 | Prueba 3 |
-|-------|----------|----------|----------|
-| x     |    valor |    valor |    valor |
-| y     |    valor |    valor |    valor |
+|       | Prueba 1     | Prueba 2      | Prueba 3     | Prueba 4 |
+|-------|--------------|---------------|--------------|----------|
+| x     |    32.700508 |    24.666824  |    32.700508 |23.642405 |
+| y     |    -8.362269 |    -18.216396 |    -8.362269 |2.257198  |
