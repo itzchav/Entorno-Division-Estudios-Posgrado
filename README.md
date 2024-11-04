@@ -6,31 +6,13 @@ Workspace para la simulación del edificio de la División de Estudios de Posgra
 </p>
 
 ### Para ejecutar el plano sin obtaculos 
-Las coordenadas del plano para cada prueba son los siguientes 
-|       | Prueba 1     | Prueba 2      | Prueba 3     | Prueba 4 |
-|-------|--------------|---------------|--------------|----------|
-| x     |    32.700508 |    24.666824  |    32.700508 |23.642405 |
-| y     |    -8.362269 |    -18.216396 |    -8.362269 |2.257198  |
 
-Se modifican los parámetros en el código launch, como se muestra a continuación, para cambiar la ubicación del robot en el entorno.
-```shell
-    <arg name="x2" default="23.642405"/>
-  <arg name="y2" default="2.257198"/>
-    <arg name="x2" default="32.700508"/>
-    <arg name="y2" default="-8.362269"/>
-```
 ```shell
  cd ~/catkin_ws
  source ./devel/setup.bash
  export TURTLEBOT3_MODEL=burger
  roslaunch turtlebot3_gazebo plano_completo.launch 
 ```
-
-
-
-
-
-
 
 ### Para ejecutar el plano con obtaculos 
 ```shell
@@ -66,5 +48,19 @@ export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo plano_completo_obstaculos_noetic.launch 
 ```
 
+### Cambios necesarios en las pruebas 
 
+Las coordenadas del plano para cada prueba son los siguientes:
+|       | Prueba 1     | Prueba 2      | Prueba 3     | Prueba 4 |
+|-------|--------------|---------------|--------------|----------|
+| x     |    32.700508 |    24.666824  |    32.700508 |23.642405 |
+| y     |    -8.362269 |    -18.216396 |    -8.362269 |2.257198  |
+
+Se modifican los parámetros en el código launch, como se muestra a continuación, para cambiar la ubicación del robot en el entorno.
+```shell
+    <arg name="x2" default="23.642405"/>
+  <arg name="y2" default="2.257198"/>
+    <arg name="x2" default="32.700508"/>
+    <arg name="y2" default="-8.362269"/>
+```
 
