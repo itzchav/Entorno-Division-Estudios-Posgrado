@@ -6,8 +6,13 @@ Workspace para la simulación del edificio de la División de Estudios de Posgra
 </p>
 
 ### Para ejecutar el plano sin obtaculos 
-
-
+Se modifican los parámetros en el código launch, como se muestra a continuación, para cambiar la ubicación del robot en el entorno.
+```shell
+    <arg name="x2" default="23.642405"/>
+  <arg name="y2" default="2.257198"/>
+    <arg name="x2" default="32.700508"/>
+    <arg name="y2" default="-8.362269"/>
+```
 ```shell
  cd ~/catkin_ws
  source ./devel/setup.bash
